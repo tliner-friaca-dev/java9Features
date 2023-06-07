@@ -16,14 +16,13 @@ class Java9FeaturesApplicationTests {
 
 private static final Optional<Object> OPTIONAL_EMPTY = Optional.empty();
 
-	/* 
+/* 
 	*Static Factory Methods; List - Set- Map
 	- Optional.empty
     - Optional.of
     - Optional.ofNullable
 	- Collections.unmodifiableList
 	- List.of
-
  */
 	@Test
 	void optionalEmpty_retornaVazio_quandoSucesso() {
@@ -58,8 +57,6 @@ private static final Optional<Object> OPTIONAL_EMPTY = Optional.empty();
 	@Test
 	void listOf_retornaListaInicializada_quandoSucesso() {
 		List<Integer> list = List.of(1, 2, 3, 4, 5);
-
-
 		assertEquals(List.of(1, 2, 3, 4, 5), list);
 	}
 }
