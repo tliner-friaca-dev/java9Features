@@ -43,7 +43,7 @@ private static final Optional<Object> OPTIONAL_EMPTY = Optional.empty();
 	}
 
 	@Test
-	void collectionsUnmodifiableList_retornaExcecaoAoTentarAdicionarValorEmListaImutavel_quandoSucesso() {
+	void collectionsUnmodifiableList_retornaExcecaoAoTentarAdicionarValorEmListaImutavel_quandoErro() {
 		List<Integer> list = new ArrayList<>();
 		List<Integer> novaLista = Collections.unmodifiableList(list);
 		assertThrows(UnsupportedOperationException.class, () -> adicionaValorNaLista(novaLista).orElseThrow());
